@@ -1,4 +1,4 @@
-**TundraBUZZ recognizer | Github**
+# TundraBUZZ recognizer | Github
 
 GitHub Repository for Alex Beauchemin's ecology honours (B.Sc. Hons) research project with Team Shrub in the Faculty of Forestry at the University of British Columbia.
 
