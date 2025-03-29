@@ -17,11 +17,11 @@ from matplotlib import pyplot as plt
 plt.rcParams['figure.figsize']=[15,5] #for large visuals
 
 #load model
-model = load_model('model_training_checkpoints/epoch-25.model') #set to where model is saved
+model = load_model("/Users/alexandrebeauchemin/TundraBUZZ_recognizer_github/model_training_checkpoints/epoch-25.model") #set to where model is saved
 
 
 #load audio files
-audio_files = sorted(glob("***/Data/*.wav")) #set to where the audio files are
+audio_files = sorted(glob("/Volumes/TundraBUZZ/data/raw/aru_audio/ARUQ9_test/*.wav")) #set to where the audio files are
 
 #Inspect the audio_files list
 print(audio_files)
@@ -32,4 +32,4 @@ print(audio_files)
 if __name__ == '__main__':
     scores = model.predict(audio_files, clip_overlap = 0.15, num_workers = 20, batch_size=36)
     scores.head()
-    scores.to_csv("Scores/predict_score_ARUQ456_newmodel.csv") #set this to where you want to save the predicitons
+    scores.to_csv("/Volumes/TundraBUZZ/outputs/recognizer_outputs/test_ARUQ9/predict_score_ARUQ9_quick.csv") #set this to where you want to save the predicitons
