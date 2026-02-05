@@ -58,6 +58,8 @@ vignettes/*.pdf
 *.DS_Store
 .AppleDouble
 .LSOverride
+.DS_Store
+**/.DS_Store
 
 # prevent to commit the README.. files created by RStudio
 *README.html
